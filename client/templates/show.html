@@ -1,0 +1,19 @@
+<div class="panel panel-default" ng-init="showEmployee()">
+    <div class="panel-heading">
+        <h3 class="panel-title">Employees Detail Information</h3>
+    </div>
+    <div class="panel-body">
+        <form>
+            <div class="form-group">
+                <label class="form-control">Name : {{employee.name}}</label>
+                <label class="form-control">Department : {{employee.dept}}</label>
+                <label class="form-control">Location : {{employee.area}}</label>
+                <label class="form-control">Job status : {{employee.status}}</label>
+                <label class="form-control">Contact : {{employee.contact}}</label>
+                <label class="form-control">salary : {{employee.salary}}</label>
+                <label class="form-control">Id : {{employee._id}}</label>
+                <a ng-href="#/employees" class="btn btn-default">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MEAN CRUD</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   
+   <div class="container">
+       <div class="row">
+           <div class="header clearfix">
+               <nav>
+                   <ul class="nav nav-pills pull-right">
+                       <li role="presentation" class="active"><a ng-href="#/employees"><span class="glyphicon glyphicon-th-list"></span> Employee List</a></li>
+                       <li role="presentation"><a ng-href="#/employees/create"><span class="glyphicon glyphicon-plus"></span> Add New Employee</a></li>
+                   </ul>
+               </nav>
+               <h3 class="text-muted" >Simple MEAN Web Application Using CRUD Operations</h3>
+           </div>
+           <div ng-view></div>
+       </div>
+   </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js"></script>
+   <script src="app.js"></script>
+   <script src="controllers/controllers.js"></script>
+</body>
+</html>
